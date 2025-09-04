@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .calculator{
+            border-radius: 80px;
+        }
+        #input{
+            border-radius: 32px;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+        .btn{
+            border-radius: 50px;
+        }
+        .btn1{
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <script src="index.js"></script>
+     <div class="root">
+        <div class="calculator">
+            <div class="output">
+                <input id="input" type="text">
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <button class="btn" onclick="bclick(7)">7</button>
+                    <button class="btn" onclick="bclick(8)">8</button>
+                    <button class="btn" onclick="bclick(9)">9</button>
+                    <button class="btn" onclick="bclick('+')">+</button>
+
+
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="bclick(4)">4</button>
+                    <button class="btn" onclick="bclick(5)">5</button>
+                    <button class="btn" onclick="bclick(6)">6</button>
+                    <button class="btn" onclick="bclick('-')">-</button> 
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="bclick(1)">1</button>
+                    <button class="btn" onclick="bclick(2)">2</button>
+                    <button class="btn" onclick="bclick(3)">3</button>
+                    <button class="btn" onclick="bclick('*')">x</button>                    
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="bclick('.')">.</button>
+                    <button class="btn" onclick="bclick(0)">0</button>
+                    <button class="btn" onclick="bclear()">Bk</button>
+                    <button class="btn" onclick="bclick('/')">/</button>  
+                    
+                </div>
+                <div class="row">
+                    <button class="btn1" onclick="eclick()">=</button>
+                </div>
+            </div>
+        </div>
+     </div>    
+</body>
+</html>
